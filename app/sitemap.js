@@ -1,5 +1,5 @@
 export default function sitemap() {
-const baseUrl = `https://e-mosjid-blog-page.vercel.app`;
+  const baseUrl = `https://your-school-portal.vercel.app`; // Replace with your school portal URL
 
   return [
     {
@@ -7,19 +7,23 @@ const baseUrl = `https://e-mosjid-blog-page.vercel.app`;
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/soalan-lazim`,
+      url: `${baseUrl}/about-school`,
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/carian-masjid`,
+      url: `${baseUrl}/programs`,
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/info-emasjid`,
+      url: `${baseUrl}/admissions`,
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/semakan-permohonan`,
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/faq`,
       lastModified: new Date(),
     },
   ];
