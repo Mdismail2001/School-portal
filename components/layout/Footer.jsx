@@ -5,53 +5,53 @@ export default function Footer() {
   return (
     <footer className="bg-[#164776] text-white py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
-        {/* Left: Image - Centered on mobile */}
+        {/* Left: Logo */}
         <div className="w-full md:w-auto flex justify-center md:justify-start">
           <Image
-            src={assetPath("/images/banner/icon.png")}
-            alt="Footer Icon"
+            src={assetPath("/images/banner/logo.webp")}
+            alt="School Logo"
             width={150}
             height={150}
             className="object-contain"
           />
         </div>
 
-        {/* Right: Line + Text Content */}
-        <div className="flex w-full md:w-auto gap-6 items-start md:items-stretch justify-between md:justify-start">
-          {/* Vertical Line (hidden on mobile) */}
+        {/* Right Content */}
+        <div className="flex w-full md:w-auto gap-6 items-start md:items-stretch">
+          {/* Vertical Line */}
           <div className="hidden md:block w-[2px] bg-white" />
 
-          {/* Text & Social Icons */}
+          {/* Text Content */}
           <div className="text-left w-full">
             <h3 className="text-2xl font-semibold">
-              eMasjid Portal(abc)
+              ABC International School
             </h3>
 
             <p className="text-base text-gray-200 mt-4 leading-relaxed">
-              Urus setia Jawatankuasa Bahagian <br />
-              Pengurusan Masjid
+              Academic & Administrative Office
             </p>
 
             <p className="text-base text-gray-200 mt-4 leading-relaxed">
-              Jabatan Agama Islam Selangor, Aras 7, <br />
-              Menara Selatan, Bangunan Sultan Idris Shah, <br />
-              40000, Shah Alam, Selangor
+              ABC International School Campus <br />
+              Level 7, Education Tower <br />
+              Shah Alam, Selangor, Malaysia
             </p>
 
             <a
               href="tel:+60355143512"
               className="block text-base text-gray-200 mt-4"
             >
-              Phone Number : +603-5514 3512 / 3513
-            </a>
-            <a
-              href="mailto:tauliah@abc.gov.my"
-              className="block text-base text-gray-200 mt-1"
-            >
-              e-mel : tauliah@abc.gov.my
+              Phone: +60 3-5514 3512 / 3513
             </a>
 
-            {/* Social Icons */}
+            <a
+              href="mailto:info@abcschool.edu.my"
+              className="block text-base text-gray-200 mt-1"
+            >
+              Email: info@abcschool.edu.my
+            </a>
+
+            {/* Social Media */}
             <div className="flex gap-5 mt-5 text-xl">
               <a href="#" aria-label="Facebook">
                 <Image
@@ -85,10 +85,11 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Centered Copyright */}
+      {/* Copyright */}
       <div className="mt-10 text-center text-sm text-gray-300">
-        &copy; {new Date().getFullYear()} Hak Cipta Terpelihara © 2025 Awfatech
-        Global Sdn Bhd Team.
+        © {new Date().getFullYear()} ABC International School. All Rights Reserved.
+        <br />
+        Powered by Awfatech Global Sdn Bhd.
       </div>
     </footer>
   );

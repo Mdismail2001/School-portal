@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Hubungi Kami - Portal eMasjid | Sokongan & Pertanyaan",
+  title: "Contact Us - School Portal | Support & Inquiries",
   description:
-    "Hubungi Portal eMasjid untuk pertanyaan, sokongan teknikal, atau maklum balas berkaitan perkhidmatan masjid dan sistem eMasjid di Malaysia.",
+    "Reach out to our school portal for any inquiries, support, or feedback related to academic services, admissions, or general school information.",
   keywords:
-    "hubungi eMasjid, contact eMasjid, sokongan eMasjid, bantuan eMasjid, pertanyaan portal eMasjid",
+    "contact school, school support, school inquiries, academic support, parent inquiries, student help",
 };
 
 export default function ContactPage() {
@@ -11,82 +11,81 @@ export default function ContactPage() {
     <main className="min-h-screen bg-gray-50 flex flex-col items-center p-6">
       {/* Header */}
       <div className="max-w-3xl text-center mb-10">
-        <h1 className="text-4xl font-bold text-green-600 mb-4">
-          Hubungi Kami
+        <h1 className="text-4xl font-bold text-blue-600 mb-4">
+          Contact Us
         </h1>
         <p className="text-gray-700 text-lg">
-          Ada pertanyaan, maklum balas, atau memerlukan bantuan berkaitan Portal
-          eMasjid? Sila hubungi kami melalui borang di bawah. Pasukan kami akan
-          menghubungi anda secepat mungkin.
+          Have a question, feedback, or need assistance related to our school? 
+          Please fill out the form below and our team will get back to you as soon as possible.
         </p>
       </div>
 
       {/* Contact Info */}
       <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <div className="bg-white p-6 rounded-xl shadow text-center">
-          <h3 className="font-semibold text-green-600 mb-2">Emel</h3>
-          <p className="text-gray-700">support@emasjid.my</p>
+          <h3 className="font-semibold text-blue-600 mb-2">Email</h3>
+          <p className="text-gray-700">info@ourschool.edu</p>
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow text-center">
-          <h3 className="font-semibold text-green-600 mb-2">Telefon</h3>
-          <p className="text-gray-700">+60 1X-XXXX XXX</p>
+          <h3 className="font-semibold text-blue-600 mb-2">Phone</h3>
+          <p className="text-gray-700">+1 (123) 456-7890</p>
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow text-center">
-          <h3 className="font-semibold text-green-600 mb-2">Waktu Operasi</h3>
-          <p className="text-gray-700">Isnin – Jumaat, 9.00 pagi – 5.00 petang</p>
+          <h3 className="font-semibold text-blue-600 mb-2">Office Hours</h3>
+          <p className="text-gray-700">Monday – Friday, 8:00 AM – 4:00 PM</p>
         </div>
       </div>
 
       {/* Contact Form */}
       <div className="max-w-3xl w-full bg-white p-8 rounded-2xl shadow">
-        <h2 className="text-2xl font-semibold text-green-600 mb-6 text-center">
-          Hantar Pertanyaan Anda
+        <h2 className="text-2xl font-semibold text-blue-600 mb-6 text-center">
+          Send Us a Message
         </h2>
 
         <form className="space-y-5">
           <div>
-            <label className="block text-gray-700 mb-1">Nama Penuh</label>
+            <label className="block text-gray-700 mb-1">Full Name</label>
             <input
               type="text"
-              placeholder="Masukkan nama anda"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Enter your full name"
+              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 mb-1">Emel</label>
+            <label className="block text-gray-700 mb-1">Email</label>
             <input
               type="email"
-              placeholder="contoh@email.com"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="example@email.com"
+              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 mb-1">Subjek</label>
+            <label className="block text-gray-700 mb-1">Subject</label>
             <input
               type="text"
-              placeholder="Subjek pertanyaan"
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Subject of your message"
+              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 mb-1">Mesej</label>
+            <label className="block text-gray-700 mb-1">Message</label>
             <textarea
               rows="5"
-              placeholder="Tulis mesej anda di sini..."
-              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Write your message here..."
+              className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition"
+            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
           >
-            Hantar Mesej
+            Send Message
           </button>
         </form>
       </div>

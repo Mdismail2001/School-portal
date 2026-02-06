@@ -11,10 +11,10 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Utama", href: "/" },
-    { name: "Info eMasjid", href: "/info-emasjid" },
-    { name: "Carian Masjid", href: "/carian-masjid" },
-    { name: "About Us", href: "/about-us" },
+    { name: "Home", href: "/" },
+    { name: "About School", href: "/about-school" },
+    { name: "Programs", href: "/programs" },
+    { name: "Admissions", href: "/admissions" },
     { name: "Contact Us", href: "/contact-us" },
   ];
 
@@ -30,7 +30,7 @@ export default function Navbar() {
           : "bg-gray-100 border-gray-300"
       }`}
     >
-      {/* Desktop Nav */}
+      {/* Desktop Navigation */}
       <ul className="hidden md:flex justify-center gap-10">
         {navItems.map((item) => (
           <li key={item.name}>
@@ -46,6 +46,7 @@ export default function Navbar() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className={`text-2xl ${isHome ? "text-white" : "text-gray-800"}`}
+          aria-label="Toggle Menu"
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>

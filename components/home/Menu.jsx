@@ -9,37 +9,37 @@ export default function Menu() {
   const features = [
     {
       icon: assetPath("/icons/cloud.svg"),
-      title: "Selamat & Terjamin",
+      title: "Secure & Reliable",
       text: (
         <>
-          Data pengguna dilindungi <br /> dengan selamat
+          Student and staff data <br /> are protected securely
         </>
       ),
     },
     {
       icon: assetPath("/icons/profile.svg"),
-      title: "Mesra Pengguna",
+      title: "Student Friendly",
       text: (
         <>
-          Akses lancar melalui <br /> telefon & tablet
+          Easy access via <br /> mobile & tablet devices
         </>
       ),
     },
     {
       icon: assetPath("/icons/time.svg"),
-      title: "Akses 24/7",
+      title: "24/7 Access",
       text: (
         <>
-          Boleh digunakan <br /> bila-bila masa
+          Learning resources available <br /> anytime, anywhere
         </>
       ),
     },
     {
       icon: assetPath("/icons/pc.svg"),
-      title: "Kemaskini Automatik",
+      title: "System Updates",
       text: (
         <>
-          Pengawasan berterusan oleh <br /> MAIS
+          Regular improvements managed <br /> by school administration
         </>
       ),
     },
@@ -47,13 +47,16 @@ export default function Menu() {
 
   return (
     <div className="bg-[#F1F1F1] py-16 px-4">
+      {/* Section Title */}
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-[#21536E]">
-        Kelebihan e-Masjid
+        Why Choose Our School Portal
       </h2>
 
+      {/* Features Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-[#21536E]">
         {features.map((item, index) => {
           const isActive = activeIndex === index;
+
           return (
             <div
               key={index}
@@ -62,12 +65,14 @@ export default function Menu() {
               onMouseLeave={() => setActiveIndex(null)}
               onTouchStart={() => setActiveIndex(index)}
             >
+              {/* Icon */}
               <img
                 src={item.icon}
-                alt="Icon"
+                alt={item.title}
                 className="w-20 h-20 object-contain mb-4"
               />
 
+              {/* Animated Line */}
               <div className="relative w-40 h-1 mb-4">
                 <div
                   className={`absolute inset-0 transition-colors duration-500 ${
@@ -83,6 +88,7 @@ export default function Menu() {
                 />
               </div>
 
+              {/* Content */}
               <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2">
                 {item.title}
               </h3>

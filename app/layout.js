@@ -14,14 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portal eMasjid  | Sistem Pengurusan Masjid Selangor",
+  title: "School Portal | Student, Parent & Teacher Dashboard",
   description:
-    "Portal eMasjid  ialah sistem pengurusan pintar masjid untuk permohonan, kemaskini dan pengurusan masjid di Selangor.",
+    "Our School Portal is a centralized platform for students, parents, and teachers to access academic information, school announcements, admissions, programs, and other school services online.",
   verification: {
     google: "VwRSVoSz5uqnXdFxtAIT6c7OGyMBP6dZ0JZ7_jXRaD8", // this is from google console 
   },
   icons: {
-    icon: assetPath("/icons/url_icon.svg"),
+    icon: assetPath("/icons/school.svg"),
   },
 };
 
