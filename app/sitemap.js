@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = `https://your-school-portal.vercel.app`; // Replace with your school portal URL
+  const baseUrl = `https://school-portal-srg8.vercel.app/`; // Replace with your school portal URL
 
   return [
     {
